@@ -5,28 +5,28 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><%= title %></title>
-
 		<!-- Bootstrap CSS -->
 		<link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
 	<body>
-		<h1 class="text-center">Hello World</h1>
-		<ul>
-		<% for (var i = 0; i< items.length; i++) { %>
-		<li><%= items[i].name %></li>
-		<% } %>
-		</ul>
-		<form action="/add" method="post" accept-charset="utf-8">
-			<input type="text" name="newItem"></input>
-			<input type="submit"></input>
-		</form>
+		<div class="container">
+			<h1 class="text-center">Hello World</h1>
+			<ul>
+				<% for (var i = 0; i< items.length; i++) { %>
+				<li><%= items[i].name %></li>
+				<% } %>
+			</ul>
+			<form action="/add" method="post" accept-charset="utf-8">
+				<input type="text" name="newItem"></input>
+				<input type="submit"></input>
+			</form>
+		</div>
 		<!-- jQuery -->
 		<script src="jquery/dist/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
